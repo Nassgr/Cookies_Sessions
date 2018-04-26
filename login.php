@@ -2,7 +2,6 @@
 
 
 if(isset($_SESSION['pseudo'])){
-    if(null !== ($_SESSION['pseudo'] = $_POST['pseudo'])){
         if(!empty($_SESSION['pseudo'])){
             if (null != isset($_SESSION['pseudo'])) {
                 header('Location: index.php');
@@ -11,10 +10,7 @@ if(isset($_SESSION['pseudo'])){
         }else {
             echo 'Erreur lors de la connexion';
         }
-    }
 }
-
-
 ?>
 <div class="container" style="margin-top:40px">
 <div class="row">
